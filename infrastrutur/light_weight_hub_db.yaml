@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  db:
+    container_name: LightWeightHubDB
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    ports:
+      - 5432:5432  # PostgreSQL-Standardport freigeben
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - type: tmpfs
+        target: /dev/shm
+        tmpfs:
+          size: 134217728
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: mydb
+
+volumes:
+  postgres_data:
