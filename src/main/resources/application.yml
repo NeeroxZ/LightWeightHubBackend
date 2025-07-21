@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: LightWeightHub_backend
+
+#Datenbank
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
