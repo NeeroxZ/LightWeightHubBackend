@@ -1,22 +1,18 @@
-package de.neeroxz.service;
+package de.neeroxz.service.user;
 
 import de.neeroxz.api.v1.user.dto.UserDTO;
 import de.neeroxz.api.v1.user.dto.UserRegistrationRequest;
-import de.neeroxz.api.v1.user.dto.UserRequest;
 import de.neeroxz.domain.user.User;
 import de.neeroxz.exception.DuplicateUsernameException;
 import de.neeroxz.mapper.UserMapper;
 import de.neeroxz.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.apache.logging.log4j.core.Logger;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.Optional;
-import java.util.logging.LogManager;
 
 @Service
 @RequiredArgsConstructor
