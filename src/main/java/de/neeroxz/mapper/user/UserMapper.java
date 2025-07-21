@@ -1,4 +1,4 @@
-package de.neeroxz.mapper;
+package de.neeroxz.mapper.user;
 
 /**
  * Created by NeeroxZ

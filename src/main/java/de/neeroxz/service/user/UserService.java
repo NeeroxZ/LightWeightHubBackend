@@ -4,7 +4,7 @@ import de.neeroxz.api.v1.user.dto.UserDTO;
 import de.neeroxz.api.v1.user.dto.UserRegistrationRequest;
 import de.neeroxz.domain.user.User;
 import de.neeroxz.exception.DuplicateUsernameException;
-import de.neeroxz.mapper.UserMapper;
+import de.neeroxz.mapper.user.UserMapper;
 import de.neeroxz.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;

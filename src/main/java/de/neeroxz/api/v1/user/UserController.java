@@ -8,7 +8,7 @@ package de.neeroxz.api.v1.user;
  */
 import de.neeroxz.api.v1.user.dto.UserDTO;
 import de.neeroxz.api.v1.user.dto.UserRegistrationRequest;
-import de.neeroxz.mapper.UserMapper;
+import de.neeroxz.mapper.user.UserMapper;
 import de.neeroxz.service.user.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
