@@ -1,4 +1,4 @@
-package de.neeroxz.api.v1.workout.dto;
+package de.neeroxz.domain.workout.dto;
 
 public record WorkoutInviteRequest() {
 }

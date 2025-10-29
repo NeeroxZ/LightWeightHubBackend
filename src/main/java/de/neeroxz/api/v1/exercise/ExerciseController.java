@@ -1,7 +1,7 @@
 package de.neeroxz.api.v1.exercise;
 
-import de.neeroxz.api.v1.exercise.dto.ExerciseAddRequest;
-import de.neeroxz.api.v1.exercise.dto.ExerciseDTO;
+import de.neeroxz.domain.exercise.dto.ExerciseAddRequest;
+import de.neeroxz.domain.exercise.dto.ExerciseDTO;
 import de.neeroxz.service.exercise.ExerciseService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

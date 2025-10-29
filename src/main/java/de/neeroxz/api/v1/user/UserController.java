@@ -6,8 +6,8 @@ package de.neeroxz.api.v1.user;
  * @author : NeeroxZ
  * @date : 21.07.2025
  */
-import de.neeroxz.api.v1.user.dto.UserDTO;
-import de.neeroxz.api.v1.user.dto.UserRegistrationRequest;
+import de.neeroxz.domain.user.dto.UserDTO;
+import de.neeroxz.domain.user.dto.UserRegistrationRequest;
 import de.neeroxz.mapper.user.UserMapper;
 import de.neeroxz.service.user.UserService;
 import jakarta.validation.Valid;

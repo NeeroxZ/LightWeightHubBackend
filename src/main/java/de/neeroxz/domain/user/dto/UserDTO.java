@@ -1,4 +1,4 @@
-package de.neeroxz.api.v1.user.dto;
+package de.neeroxz.domain.user.dto;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

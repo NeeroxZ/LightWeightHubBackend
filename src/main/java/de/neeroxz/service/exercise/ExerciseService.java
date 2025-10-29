@@ -1,7 +1,7 @@
 package de.neeroxz.service.exercise;
 
-import de.neeroxz.api.v1.exercise.dto.ExerciseAddRequest;
-import de.neeroxz.api.v1.exercise.dto.ExerciseDTO;
+import de.neeroxz.domain.exercise.dto.ExerciseAddRequest;
+import de.neeroxz.domain.exercise.dto.ExerciseDTO;
 import de.neeroxz.domain.exercise.Exercise;
 import de.neeroxz.mapper.exercise.ExerciseMapper;
 import de.neeroxz.repository.ExerciseCategoryRepo;

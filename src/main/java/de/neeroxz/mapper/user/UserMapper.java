@@ -7,8 +7,8 @@ package de.neeroxz.mapper.user;
  * @date : 21.07.2025
  */
 
-import de.neeroxz.api.v1.user.dto.UserDTO;
-import de.neeroxz.api.v1.user.dto.UserRegistrationRequest;
+import de.neeroxz.domain.user.dto.UserDTO;
+import de.neeroxz.domain.user.dto.UserRegistrationRequest;
 import de.neeroxz.domain.user.User;
 import org.mapstruct.Mapper;
 

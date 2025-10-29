@@ -1,4 +1,4 @@
-package de.neeroxz.api.v1.exercise.dto;
+package de.neeroxz.domain.exercise.dto;
 
 /**
  * Created by NeeroxZ
