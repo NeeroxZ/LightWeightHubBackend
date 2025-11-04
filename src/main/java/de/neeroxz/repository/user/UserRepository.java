@@ -1,4 +1,4 @@
-package de.neeroxz.repository;
+package de.neeroxz.repository.user;
 
 /**
  * Created by NeeroxZ

@@ -1,4 +1,4 @@
-package de.neeroxz.repository;
+package de.neeroxz.repository.exercise;
 
 import de.neeroxz.domain.exercise.MuscleGroup;
 import org.springframework.data.jpa.repository.JpaRepository;

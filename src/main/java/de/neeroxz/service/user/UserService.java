@@ -5,7 +5,7 @@ import de.neeroxz.domain.user.dto.UserRegistrationRequest;
 import de.neeroxz.domain.user.User;
 import de.neeroxz.exception.DuplicateUsernameException;
 import de.neeroxz.mapper.user.UserMapper;
-import de.neeroxz.repository.UserRepository;
+import de.neeroxz.repository.user.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
