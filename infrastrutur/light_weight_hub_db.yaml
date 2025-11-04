@@ -9,7 +9,7 @@ services:
     ports:
       - 5432:5432  # PostgreSQL-Standardport freigeben
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql
       - type: tmpfs
         target: /dev/shm
         tmpfs:
