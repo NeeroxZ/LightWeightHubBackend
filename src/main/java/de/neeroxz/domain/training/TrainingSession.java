@@ -1,17 +1,18 @@
 package de.neeroxz.domain.training;
 
+import de.neeroxz.domain.user.User;
 import de.neeroxz.domain.workout.Workout;
 import jakarta.persistence.*;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.CurrentTimestamp;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
+import org.hibernate.annotations.*;
 
 import java.sql.Timestamp;
+import java.time.Instant;
 
 @Getter
 @Setter
@@ -26,7 +27,10 @@ public class TrainingSession
     @Column(name = "user_id")
     private Long id;
 
-    private Long userId;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    private User userId;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "workout_id", nullable = false)
@@ -39,5 +43,19 @@ public class TrainingSession
 
     @Column(name = "end_at")
     private Timestamp endAt;
+
+    @NotNull
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user1;
+
+    @ColumnDefault("CURRENT_TIMESTAMP")
+    @Column(name = "startet_at")
+    private Instant startetAt;
+
+    @NotNull
+    @Column(name = "ended_at", nullable = false)
+    private Instant endedAt;
 
 }
