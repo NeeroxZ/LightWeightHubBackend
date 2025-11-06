@@ -44,12 +44,6 @@ public class TrainingSession
     @Column(name = "end_at")
     private Timestamp endAt;
 
-    @NotNull
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user1;
-
     @ColumnDefault("CURRENT_TIMESTAMP")
     @Column(name = "startet_at")
     private Instant startetAt;

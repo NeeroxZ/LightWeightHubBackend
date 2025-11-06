@@ -22,8 +22,6 @@ public class TrainingExercise
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long aLong;
-
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
