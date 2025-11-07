@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 /**
  * Created by NeeroxZ
  *
@@ -32,8 +34,9 @@ public class WorkoutExercise {
     private Exercise exercise;
 
     /* Reihenfolge innerhalb eines Workouts */
-    private int postion;
-    private int sets;
-    private int reps;
+    private int position;
+
+    @OneToMany(mappedBy = "workoutExercise", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<WorkoutSet> sets;
 
 }
